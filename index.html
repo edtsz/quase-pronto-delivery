@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <script src="js/app.js"></script>
+    
+    <form action="start.php" enctype="application/x-www-form-urlencoded" method="POST">
+        <fieldset class="itemDoPedido">
+            <input type="hidden" name="pizza_quantidade" value="1">
+            <select name="pizza_sabor[]">
+                <option value="Calabresa">Calabresa</option>
+                <option value="Frango">Frango</option>
+                <option value="4 Queijos">4 Queijos</option>
+                <option value="Marguerita">Marguerita</option>
+            </select>
+            <select name="pizza_tamanho[]">
+                <option value="Broto">Broto</option>
+                <option value="Pequena">Pequena</option>
+                <option value="Média">Média</option>
+                <option value="Grande">Grande</option>
+            </select>
+            <select name="pizza_borda[]">
+                <option value="Cheddar">Cheddar</option>
+                <option value="Catupiri">Catupiri</option>
+                <option value="Chocolate Branco">Chocolate Branco</option>
+                <option value="Chocolate Preto">Chocolate Preto</option>
+            </select>
+
+            <button type="button" onclick="addItem(this)">+</button>
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+</body>
+
+</html>
